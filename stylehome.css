@@ -201,13 +201,6 @@ h4{
     grid-gap: 30px;
 }
 
-.square{
-  border-radius: 25px;
-  padding: 15px;
-  width: 200px;
-  height: 50px;
-}
-
 #select-menu{
   border-radius: 25px;
   padding: 15px;
@@ -216,6 +209,8 @@ h4{
   color: black;
   font-size: 25px;
   cursor: pointer;
+  width: 200px;
+  height: 50px;
 }
 
 

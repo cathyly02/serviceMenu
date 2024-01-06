@@ -201,7 +201,7 @@ h4{
     grid-gap: 30px;
 }
 
-#select-menu{
+.select-menu{
   border-radius: 25px;
   padding: 15px;
   background-color: #F2BED1;

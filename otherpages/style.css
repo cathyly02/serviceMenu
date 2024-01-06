@@ -193,7 +193,6 @@ h4{
 /*--------------- Under the photo ---------------------*/
 
 #Back {
-  justify-content: center;
   position: relative;
   margin: 20px auto 5px; /* Center horizontally with auto */
   border-radius: 25px;
@@ -212,7 +211,7 @@ h4{
 .outline-square {
   position: relative; /* Set position to relative for proper absolute positioning */
   width: 65%;
-  height: 100px;
+  height: 20%;
   border: 5px solid #F2BED1; /* Replace with your desired outline color */
   border-radius: 25px;
   margin: 20px auto; /* Center the squares */

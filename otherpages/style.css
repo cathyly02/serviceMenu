@@ -208,11 +208,11 @@ h4{
 
 .outline-square {
   position: relative; /* Set position to relative for proper absolute positioning */
-  width: 400px;
+  width: 65%;
   height: 100px;
   border: 5px solid #F2BED1; /* Replace with your desired outline color */
   border-radius: 25px;
-  margin: 10px auto; /* Center the squares */
+  margin: 20px auto; /* Center the squares */
 }
 
 
@@ -229,8 +229,6 @@ h4{
 .services{
     justify-content: center;
     text-align: center;
-    display: grid;
-    grid-gap: 30px;
 }
 
 .service-title{

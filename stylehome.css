@@ -201,7 +201,7 @@ h4{
     grid-gap: 30px;
 }
 
-.select-menu{
+.content .select-menu {
   border-radius: 25px;
   padding: 15px;
   background-color: #F2BED1;
@@ -212,7 +212,6 @@ h4{
   width: 200px;
   height: 50px;
 }
-
 
 
 /*--------------- Footer ---------------------*/

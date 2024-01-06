@@ -162,6 +162,21 @@
             </a>
         </div>
 
+           <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const services = document.querySelectorAll('.outline-square');
+
+                services.forEach(service => {
+                    service.addEventListener('click', function () {
+                        // Toggle visibility of the dropdown description
+                        const target = this.getAttribute('data-target');
+                        const dropdown = document.querySelector(`.outline-square[data-target="${target}"] .dropdown-description`);
+                        dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+                    });
+                });
+            });
+        </script>
+
 
 
 <!--------------Footer------------->
@@ -175,3 +190,5 @@
 </div>
     </body>
 </html>
+
+

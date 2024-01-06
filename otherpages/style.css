@@ -211,7 +211,7 @@ cursor: pointer;
 .outline-square {
 position: relative; /* Set position to relative for proper absolute positioning */
 width: 75%;
-height: 65%;
+height: 70%;
 border: 5px solid #F2BED1; /* Replace with your desired outline color */
 border-radius: 25px;
 margin: 20px auto; /* Center the squares */

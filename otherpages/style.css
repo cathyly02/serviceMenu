@@ -193,6 +193,7 @@ h4{
 /*--------------- Under the photo ---------------------*/
 
 #Back{
+  justify-content: center;
   position: relative;
   margin: 20px 150px 5px;
   border-radius: 25px;

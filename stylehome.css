@@ -97,17 +97,17 @@ body {
 }
 
 .sidebar {
-  transition: transform var(--animation-timing), width 0.5s ease;
-  transform: translateX(-100%);
-  position: fixed;
-  padding: 0.5rem 1rem;
-  padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
-  height: 100%;
-  width: 300px;
-  background-color: var(--foreground);
-  color: var(--background);
-  min-height: 100vh;
-  z-index: 3;
+    transition: transform var(--animation-timing);
+    transform: translateX(-100%);
+    position: fixed;
+    padding: 0.5rem 1rem;
+    padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
+    height: 100%;
+    width: 300px;
+    background-color: var(--foreground);
+    color: var(--background);
+    min-height: 100vh;
+    z-index: 3;
 }
 
 button.sibebar-text {
@@ -117,12 +117,13 @@ button.sibebar-text {
   margin-top: 25px;
   margin-bottom: 25px;
   cursor: pointer;
+  width: 250px;
   border: transparent;
 }
 
 .sidebar button.sibebar-text:hover {
   background-color: #F2BED1; /* Choose your highlight color */
-  width: 240px;
+  width: 250px;
   height: 60px;
   color: black; /* Adjust text color for better visibility */
 }
@@ -130,7 +131,6 @@ button.sibebar-text {
 .hamburger-menu:has(input:checked) + .sidebar {
     transform: translateX(0);
 }
-
 
 
 

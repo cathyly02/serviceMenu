@@ -197,11 +197,10 @@ h4{
 .content{
     justify-content: center;
     text-align: center;
-    display: grid;
-    grid-gap: 30px;
 }
 
 .content .select-menu {
+  margin: 20px;
   border-radius: 25px;
   padding: 15px;
   background-color: #F2BED1;
@@ -209,9 +208,11 @@ h4{
   color: black;
   font-size: 25px;
   cursor: pointer;
-  width: 200px;
-  height: 50px;
+  width: 65%;
+  height: 100px;
 }
+
+
 
 
 /*--------------- Footer ---------------------*/

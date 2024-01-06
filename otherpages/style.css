@@ -237,6 +237,15 @@ h4{
 .services{
     justify-content: center;
     text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .services {
+    grid-template-columns: 1fr; /* Set a one-column grid for screens smaller than 768px */
+  }
 }
 
 .service-title{

@@ -207,6 +207,10 @@ font-size: 16px;
 cursor: pointer;
 }
 
+.square{
+  margin: 20px;
+}
+
 
 .outline-square {
 position: relative; /* Set position to relative for proper absolute positioning */

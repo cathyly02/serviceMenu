@@ -207,9 +207,8 @@ font-size: 16px;
 cursor: pointer;
 }
 
-.square{
-  padding: 200px;
-}
+.square {
+  padding: 50px 200px; 
 
 
 .outline-square {

@@ -206,44 +206,15 @@ cursor: pointer;
 }
 
 .form {
-  width: 100%;
-  max-width: 640px; /* Adjust the maximum width as needed */
   margin: 0 auto; /* Center the form horizontally */
   padding: 20px;
-  border: 1px solid #ccc;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: #f9f9f9;
+    justify-content: center;
 }
 
 
 label {
   font-size: 25px;
-}
-
-.input {
-  justify-content: center;
-  font-size: 16px;
-  width: 100%; /* Set the width to 100% of its container */
-  height: 50px; /* Adjust the height as needed */
-  border: 0;
-  border-bottom: 2px solid #F2BED1;
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
-  margin-bottom: 20px; /* Add some space between input fields */
-}
-
-.message {
-  height: 100px;
-  background-color: transparent;
-  font-size: 16px;
-  width: 100%;
-  border: 2px solid #F2BED1;
-}
-
-.text-descrip {
-    padding: 25px 50px 25px;
-    text-align: center;
-    line-height: 1.5;
 }
 
 .outline-square {

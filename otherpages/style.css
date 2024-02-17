@@ -207,6 +207,13 @@ font-size: 16px;
 cursor: pointer;
 }
 
+.text-descrip{
+    padding: 25px 50px 25px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+
 .outline-square {
 position: relative; /* Set position to relative for proper absolute positioning */
 width: 75%;

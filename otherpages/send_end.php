@@ -93,13 +93,7 @@ echo "
                     <button id="Back">Back to Home</button>
                 </a>
             </div>
-
-            <div class = "form">    
-            <h3>Thank you so much for your feedback. We will get back to you in a bit.</h3>
-
-            </div>
-
-
+            <iframe src=" https://docs.google.com/forms/d/e/1FAIpQLSfXPUAlCNlHIxCw6gHwg-_5YUkj7XkK798Q56xEBSyxNtbzRQ/viewform?usp=pp_url" width="640" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </div>
 
 <!--------------Footer------------->

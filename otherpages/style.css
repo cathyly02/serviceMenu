@@ -6,8 +6,6 @@
 }
 
 
-
-
 /*---------- sidebar menu -----*/
 *,
 *::after,
@@ -207,51 +205,17 @@ font-size: 16px;
 cursor: pointer;
 }
 
-.submit-btn {
-  justify-content: center;
-  border-radius: 25px;
-  padding: 15px;
-  width: 200px;
-  background-color: #ebc05c;
-  border: 2px solid transparent; /* Add a transparent border */
-  color: black;
-  font-size: 20px;
-  cursor: pointer;
-  transition: border-color 0.3s, background-color 0.3s; /* Add transitions */
-}
-
-/* Change border color on hover */
-.submit-btn:hover {
-  border-color:  #ebc05c; /* Change border color to yellow */
-  background-color: white;
-}
-
-/* Change border color when clicked */
-.submit-btn:active {
-  border-color:  #ebc05c; /* Change border color to yellow */
-  background-color: white;
-}
-
-/* Change background color when clicked */
-.submit-btn:focus {
-  outline: none; /* Remove default outline */
-  background-color: white; /* Change background color to white */
-}
-
-
 .form {
-  width: 600px; /* Set the width to 90% of the viewport width */
-  margin: 0 auto; /* Center the form horizontally */
-  padding: 20px; /* Add padding for spacing inside the form */
-  text-align: center; /* Center-align the content inside the form */
+    width: 100%;
+    max-width: 640px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
 }
 
-@media screen and (max-width: 767px) {
-  .form {
-    width: 90%; /* Adjust the width for smaller screens */
-    max-width: none; /* Remove the maximum width constraint */
-  }
-}
 
 label {
   font-size: 25px;

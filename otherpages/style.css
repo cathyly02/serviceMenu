@@ -224,9 +224,7 @@ cursor: pointer;
 .form iframe {
   width: 100%; /* Ensure iframe fills the width of its container */
   max-width: 100%; /* Ensure the iframe doesn't exceed the width of its container */
-  height: auto; /* Allow the height to adjust according to the content */
 }
-
 
 label {
   font-size: 25px;

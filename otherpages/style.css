@@ -233,6 +233,7 @@ border-radius: 20px;
 }
 
 .services{
+  padding-top: 10%;
   justify-content: center;
   text-align: center;
   display: grid;;

@@ -5,7 +5,6 @@
   font-family: 'Maharlika', sans-serif;
 }
 
-
 /*---------- sidebar menu -----*/
 *,
 *::after,
@@ -120,23 +119,17 @@ border: transparent;
 }
 
 .sidebar button.sibebar-text:hover {
-background-color: #F2BED1; /* Choose your highlight color */
+background-color: #F2BED1;
 width: 250px;
 height: 60px;
-color: black; /* Adjust text color for better visibility */
+color: black;
 }
 
 .hamburger-menu:has(input:checked) + .sidebar {
   transform: translateX(0);
 }
 
-
-
-
-
-
 /*------- font sizes --------*/
-
 h1{
   font-size: 50px;
 }
@@ -153,12 +146,10 @@ h4{
   font-size: 16px;
 }
 
-
 /*------- header --------*/
-
 .header{
   min-height: 250px;
-  width: 100%; /* Make the header full width */
+  width: 100%;
   background-image: linear-gradient(hsla(338, 67%, 85%, 0.366),hsla(338, 67%, 85%, 0.366)), url(images/drillNails.png);
   background-size: cover;
   background-position: center;
@@ -186,13 +177,10 @@ cursor: pointer;
   padding: 60px 50px 25px;
 }
 
-
-
 /*--------------- Under the photo ---------------------*/
-
 #Back {
 position: relative;
-margin: 20px auto 5px; /* Center horizontally with auto */
+margin: 20px auto 5px;
 border-radius: 25px;
 padding: 15px;
 width: 200px;
@@ -214,17 +202,9 @@ cursor: pointer;
   height: auto;
 }
 
-@media only screen and (max-width: 767px) {
-  .form {
-    width: 90%; /* Adjust the width for smaller screens */
-    padding: 10px;  /* Reduce padding for smaller screens */
-  }
-}
-
-/* Adjust iframe size for mobile devices */
 .form iframe {
-  width: 100%; /* Ensure iframe fills the width of its container */
-  max-width: 100%; /* Ensure the iframe doesn't exceed the width of its container */
+  width: 100%;
+  max-width: 100%;
 }
 
 label {
@@ -232,26 +212,18 @@ label {
 }
 
 .outline-square {
-position: relative; /* Set position to relative for proper absolute positioning */
+position: relative;
 width: 75%;
 height: 70%;
-border: 5px solid #F2BED1; /* Replace with your desired outline color */
+border: 5px solid #F2BED1;
 border-radius: 25px;
-margin: 20px auto; /* Center the squares */
+margin: 20px auto;
 }
 
-@media only screen and (max-width: 767px) {
-.outline-square {
-  width: 90%; /* Adjust the width for smaller screens */
-}
-}
-
-/* Show the dropdown menu on hover */
 .outline-square:hover .dropdown-description {
 display: block;
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
 .outline-square:hover .service-title {
 border-radius: 20px;
 }
@@ -259,16 +231,9 @@ border-radius: 20px;
 .services{
   justify-content: center;
   text-align: center;
-  display: grid;;
+  display: grid;
   grid-gap: 20px;
 }
-
-@media only screen and (max-width: 767px) {
-.services {
-  grid-template-columns: 1fr; /* Set a one-column grid for screens smaller than 768px */
-}
-}
-
 
 .service-title{
 padding: 10px;
@@ -287,6 +252,7 @@ box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 z-index: 3;
 border-radius: 20px;
 }
+
 .dropdown-description p{
 margin: 20px;
 }
@@ -296,7 +262,6 @@ margin: 20px;
   text-align: center;
   padding: 25px 50px 25px;
   line-height: 1.5;
-
 }
 
 .footer a i{
@@ -305,8 +270,7 @@ margin: 20px;
   margin: 10px;
 }
 
-/* NEW STYLES FOR UPDATED MENU */
-
+/* PRICING TABLE STYLES */
 .pricing-table {
     margin: 20px auto;
     max-width: 90%;
@@ -345,6 +309,7 @@ margin: 20px;
     background-color: #fdf2f8;
 }
 
+/* SPECIAL NOTICE STYLES */
 .special-note {
     background-color: #fef3c7;
     border: 4px solid #f59e0b;
@@ -359,68 +324,7 @@ margin: 20px;
     line-height: 1.6;
 }
 
-.highlight {
-    background-color: #ecfdf5 !important;
-    border-color: #10b981 !important;
-}
-
-.highlight .service-title {
-    color: #065f46;
-}
-
-/* Mobile responsiveness for new elements - LARGER SIZES */
-@media only screen and (max-width: 767px) {
-    .pricing-table, .special-note {
-        width: 98%;
-        margin: 20px auto;
-    }
-    
-    .pricing-table {
-        overflow-x: auto; /* Allow horizontal scrolling if needed */
-    }
-    
-    .pricing-table th, .pricing-table td {
-        padding: 15px 8px;
-        font-size: 18px;
-        min-width: 70px; /* Ensure minimum width for 5 columns */
-    }
-    
-    .pricing-table th {
-        font-size: 20px;
-    }
-    
-    .pricing-table td:first-child, .pricing-table th:first-child {
-        font-size: 16px; /* Slightly smaller for service type column */
-        min-width: 90px;
-    }
-    
-    .special-note {
-        font-size: 20px;
-        padding: 20px;
-    }
-}
-
-/* Extra small screens - even more compact */
-@media only screen and (max-width: 480px) {
-    .pricing-table th, .pricing-table td {
-        padding: 12px 6px;
-        font-size: 16px;
-        min-width: 65px;
-    }
-    
-    .pricing-table th {
-        font-size: 18px;
-    }
-    
-    .pricing-table td:first-child, .pricing-table th:first-child {
-        font-size: 14px;
-        min-width: 80px;
-    }
-}
-
-/* ADD THESE STYLES TO THE END OF YOUR EXISTING style.css FILE */
-
-/* SENIOR-FRIENDLY ENHANCEMENTS */
+/* SENIOR-FRIENDLY MENU SECTIONS */
 .menu-section {
     margin: 30px auto;
     max-width: 95%;
@@ -479,67 +383,6 @@ margin: 20px;
     font-style: italic;
 }
 
-.big-notice {
-    background: linear-gradient(135deg, #fef3c7, #fde68a);
-    border: 4px solid #f59e0b;
-    border-radius: 20px;
-    padding: 30px;
-    margin: 30px auto;
-    max-width: 95%;
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    color: #92400e;
-    line-height: 1.6;
-    box-shadow: 0 6px 15px rgba(245, 158, 11, 0.3);
-}
-
-.pricing-table-simple {
-    margin: 30px auto;
-    max-width: 95%;
-    background: white;
-    border: 4px solid #F2BED1;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-}
-
-.pricing-table-simple table {
-    width: 100%;
-    border-collapse: collapse;
-    font-family: 'Maharlika', sans-serif;
-}
-
-.pricing-table-simple th {
-    background: #F2BED1;
-    color: black;
-    padding: 25px 15px;
-    text-align: center;
-    font-size: 22px;
-    font-weight: bold;
-    border: 2px solid #e5b8d1;
-}
-
-.pricing-table-simple td {
-    padding: 20px 15px;
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    border: 1px solid #e5b8d1;
-    background: white;
-}
-
-.pricing-table-simple tr:nth-child(even) td {
-    background: #fdf2f8;
-}
-
-.pricing-table-simple td:first-child {
-    text-align: left;
-    font-weight: bold;
-    background: #f8f4ff !important;
-    color: #4c1d95;
-}
-
 .back-button-top, .back-button-bottom {
     text-align: center;
     margin: 30px auto;
@@ -564,8 +407,50 @@ margin: 20px;
     box-shadow: 0 6px 12px rgba(0,0,0,0.3);
 }
 
-/* Mobile optimizations for senior-friendly design */
+/* MOBILE RESPONSIVE STYLES */
 @media only screen and (max-width: 767px) {
+    .form {
+        width: 90%;
+        padding: 10px;
+    }
+    
+    .outline-square {
+        width: 90%;
+    }
+    
+    .services {
+        grid-template-columns: 1fr;
+    }
+    
+    .pricing-table, .special-note {
+        width: 98%;
+        margin: 20px auto;
+    }
+    
+    .pricing-table {
+        overflow-x: auto;
+    }
+    
+    .pricing-table th, .pricing-table td {
+        padding: 15px 8px;
+        font-size: 18px;
+        min-width: 70px;
+    }
+    
+    .pricing-table th {
+        font-size: 20px;
+    }
+    
+    .pricing-table td:first-child, .pricing-table th:first-child {
+        font-size: 16px;
+        min-width: 90px;
+    }
+    
+    .special-note {
+        font-size: 20px;
+        padding: 20px;
+    }
+    
     .section-header {
         font-size: 24px;
         padding: 15px;
@@ -584,35 +469,21 @@ margin: 20px;
     .service-price {
         font-size: 26px;
     }
-    
-    .big-notice {
-        font-size: 20px;
-        padding: 25px 15px;
-    }
-    
-    .pricing-table-simple {
-        overflow-x: auto;
-    }
-    
-    .pricing-table-simple th {
-        font-size: 18px;
-        padding: 20px 10px;
-    }
-    
-    .pricing-table-simple td {
-        font-size: 17px;
-        padding: 15px 8px;
-    }
 }
 
 @media only screen and (max-width: 480px) {
-    .pricing-table-simple th {
+    .pricing-table th, .pricing-table td {
+        padding: 12px 6px;
         font-size: 16px;
-        padding: 15px 6px;
+        min-width: 65px;
     }
     
-    .pricing-table-simple td {
-        font-size: 15px;
-        padding: 12px 5px;
+    .pricing-table th {
+        font-size: 18px;
+    }
+    
+    .pricing-table td:first-child, .pricing-table th:first-child {
+        font-size: 14px;
+        min-width: 80px;
     }
 }

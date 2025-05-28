@@ -309,7 +309,7 @@ margin: 20px;
 
 .pricing-table {
     margin: 20px auto;
-    max-width: 75%;
+    max-width: 90%;
     background: white;
     border: 5px solid #F2BED1;
     border-radius: 25px;
@@ -323,21 +323,22 @@ margin: 20px;
 }
 
 .pricing-table th, .pricing-table td {
-    padding: 15px 10px;
+    padding: 20px 15px;
     text-align: center;
-    border: 1px solid #F2BED1;
+    border: 2px solid #F2BED1;
 }
 
 .pricing-table th {
     background-color: #F2BED1;
     font-weight: bold;
     color: black;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 .pricing-table td {
     background-color: white;
-    font-size: 16px;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 .pricing-table tr:nth-child(even) td {
@@ -346,16 +347,16 @@ margin: 20px;
 
 .special-note {
     background-color: #fef3c7;
-    border: 3px solid #f59e0b;
+    border: 4px solid #f59e0b;
     border-radius: 25px;
-    padding: 20px;
+    padding: 25px;
     margin: 20px auto;
-    max-width: 75%;
+    max-width: 90%;
     text-align: center;
     font-weight: bold;
     color: #92400e;
-    font-size: 18px;
-    line-height: 1.5;
+    font-size: 22px;
+    line-height: 1.6;
 }
 
 .highlight {
@@ -367,24 +368,24 @@ margin: 20px;
     color: #065f46;
 }
 
-/* Mobile responsiveness for new elements */
+/* Mobile responsiveness for new elements - LARGER SIZES */
 @media only screen and (max-width: 767px) {
     .pricing-table, .special-note {
-        width: 90%;
+        width: 95%;
         margin: 20px auto;
     }
     
     .pricing-table th, .pricing-table td {
-        padding: 10px 5px;
-        font-size: 14px;
+        padding: 18px 10px;
+        font-size: 20px;
     }
     
     .pricing-table th {
-        font-size: 16px;
+        font-size: 22px;
     }
     
     .special-note {
-        font-size: 16px;
-        padding: 15px;
+        font-size: 20px;
+        padding: 20px;
     }
 }

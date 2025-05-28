@@ -1,419 +1,198 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Maharlika', sans-serif;
-}
+/* ADD THESE STYLES TO THE END OF YOUR EXISTING style.css FILE */
 
-
-/*---------- sidebar menu -----*/
-*,
-*::after,
-*::before {
-box-sizing: border-box;
-}
-
-body {
-margin: 0;
-}
-
-:root {
---bar-width: 60px;
---bar-height: 8px;
---hamburger-gap: 6px;
---foreground: #333;
---background: white;
---hamburger-margin: 8px;
---animation-timing: 200ms ease-in-out;
---hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
-}
-
-.hamburger-menu {
---x-width: calc(var(--hamburger-height) * 1.41421356237);
-display: flex;
-flex-direction: column;
-gap: var(--hamburger-gap);
-width: max-content;
-position: absolute;
-top: var(--hamburger-margin);
-left: var(--hamburger-margin);
-z-index: 4;
-cursor: pointer;
-padding: 10px ;
-padding: 10px;
-}
-
-.hamburger-menu:has(input:checked) {
---foreground: white;
---background: black;
-}
-
-.hamburger-menu:has(input:focus-visible)::before,
-.hamburger-menu:has(input:focus-visible)::after,
-.hamburger-menu input:focus-visible {
-border: 1px solid var(--background);
-box-shadow: 0 0 0 1px var(--foreground);
-}
-
-.hamburger-menu::before,
-.hamburger-menu::after,
-.hamburger-menu input {
-content: "";
-width: var(--bar-width);
-height: var(--bar-height);
-background-color: var(--foreground);
-border-radius: 9999px;
-transform-origin: left center;
-transition: opacity var(--animation-timing), width var(--animation-timing),
-  rotate var(--animation-timing), translate var(--animation-timing),
-  background-color var(--animation-timing);
-}
-
-.hamburger-menu input {
-  appearance: none;
-  padding: 0;
-  margin: 0;
-  outline: none;
-  pointer-events: none;
-}
-
-.hamburger-menu:has(input:checked)::before {
-rotate: 45deg;
-width: var(--x-width);
-translate: 0 calc(var(--bar-height) / -2);
-}
-
-.hamburger-menu:has(input:checked)::after {
-rotate: -45deg;
-width: var(--x-width);
-translate: 0 calc(var(--bar-height) / 2);
-}
-
-.hamburger-menu input:checked {
-opacity: 0;
-width: 0;
-}
-
-.sidebar {
-  transition: transform var(--animation-timing);
-  transform: translateX(-100%);
-  position: fixed;
-  padding: 0.5rem 1rem;
-  padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
-  height: 100%;
-  width: 300px;
-  background-color: var(--foreground);
-  color: var(--background);
-  min-height: 100vh;
-  z-index: 3;
-}
-
-button.sibebar-text {
-font-size: 25px;
-color: white;
-background-color: var(--foreground);
-margin-top: 25px;
-margin-bottom: 25px;
-cursor: pointer;
-width: 250px;
-border: transparent;
-}
-
-.sidebar button.sibebar-text:hover {
-background-color: #F2BED1; /* Choose your highlight color */
-width: 250px;
-height: 60px;
-color: black; /* Adjust text color for better visibility */
-}
-
-.hamburger-menu:has(input:checked) + .sidebar {
-  transform: translateX(0);
-}
-
-
-
-
-
-
-/*------- font sizes --------*/
-
-h1{
-  font-size: 50px;
-}
-
-h2{
-  font-size: 25px;
-}
-
-h3{
-  font-size: 30px;
-}
-
-h4{
-  font-size: 16px;
-}
-
-
-/*------- header --------*/
-
-.header{
-  min-height: 250px;
-  width: 100%; /* Make the header full width */
-  background-image: linear-gradient(hsla(338, 67%, 85%, 0.366),hsla(338, 67%, 85%, 0.366)), url(images/drillNails.png);
-  background-size: cover;
-  background-position: center;
-}
-
-.logo {
-display: flex; 
-justify-content: center;
-padding: 10px 50px 10px;
-background-color: white;
-width: auto;
-}
-
-.logo button {
-color: black;
-border: none;
-padding: 10px 50px 10px;
-background-color: white;
-font-size: 30px;
-cursor: pointer;
-}
-
-.container{
-  text-align: center;
-  padding: 60px 50px 25px;
-}
-
-
-
-/*--------------- Under the photo ---------------------*/
-
-#Back {
-position: relative;
-margin: 20px auto 5px; /* Center horizontally with auto */
-border-radius: 25px;
-padding: 15px;
-width: 200px;
-height: 50px;
-background-color: #F2BED1;
-border: transparent;
-color: black;
-padding: 3px;
-font-size: 16px;
-cursor: pointer;
-}
-
-.form {
-  margin: 0 auto; 
-  width: 1000px;
-  padding: 20px;
-  border-radius: 5px;
-  max-width: 100%; 
-  height: auto;
-}
-
-@media only screen and (max-width: 767px) {
-  .form {
-    width: 90%; /* Adjust the width for smaller screens */
-    padding: 10px;  /* Reduce padding for smaller screens */
-  }
-}
-
-/* Adjust iframe size for mobile devices */
-.form iframe {
-  width: 100%; /* Ensure iframe fills the width of its container */
-  max-width: 100%; /* Ensure the iframe doesn't exceed the width of its container */
-}
-
-label {
-  font-size: 25px;
-}
-
-.outline-square {
-position: relative; /* Set position to relative for proper absolute positioning */
-width: 75%;
-height: 70%;
-border: 5px solid #F2BED1; /* Replace with your desired outline color */
-border-radius: 25px;
-margin: 20px auto; /* Center the squares */
-}
-
-@media only screen and (max-width: 767px) {
-.outline-square {
-  width: 90%; /* Adjust the width for smaller screens */
-}
-}
-
-/* Show the dropdown menu on hover */
-.outline-square:hover .dropdown-description {
-display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.outline-square:hover .service-title {
-border-radius: 20px;
-}
-
-.services{
-  justify-content: center;
-  text-align: center;
-  display: grid;;
-  grid-gap: 20px;
-}
-
-@media only screen and (max-width: 767px) {
-.services {
-  grid-template-columns: 1fr; /* Set a one-column grid for screens smaller than 768px */
-}
-}
-
-
-.service-title{
-padding: 10px;
-line-height: 1.5;
-}
-
-.dropdown-description {
-line-height: 1.5;
-display: none;
-position: absolute;
-top: 100%;
-left: 0;
-width: 100%;
-background-color: #F2BED1;
-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-z-index: 3;
-border-radius: 20px;
-}
-.dropdown-description p{
-margin: 20px;
-}
-
-/*--------------- Footer ---------------------*/
-.footer{
-  text-align: center;
-  padding: 25px 50px 25px;
-  line-height: 1.5;
-
-}
-
-.footer a i{
-  font-size: 50px;
-  color: black;
-  margin: 10px;
-}
-
-/* NEW STYLES FOR UPDATED MENU */
-
-.pricing-table {
-    margin: 20px auto;
-    max-width: 90%;
+/* SENIOR-FRIENDLY ENHANCEMENTS */
+.menu-section {
+    margin: 30px auto;
+    max-width: 95%;
     background: white;
-    border: 5px solid #F2BED1;
-    border-radius: 25px;
-    overflow: hidden;
+    border: 4px solid #F2BED1;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-.pricing-table table {
+.section-header {
+    background: #F2BED1;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    margin: -25px -25px 25px -25px;
+    border-radius: 16px 16px 0 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.simple-service {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 15px 0;
+    background: #fefefe;
+    border: 2px solid #e5e5e5;
+    border-radius: 15px;
+    font-size: 22px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.simple-service:hover {
+    background: #f8f4ff;
+    border-color: #F2BED1;
+}
+
+.service-name {
+    font-weight: bold;
+    color: #333;
+    flex: 1;
+}
+
+.service-price {
+    font-weight: bold;
+    color: #d63384;
+    font-size: 24px;
+}
+
+.service-description {
+    font-size: 16px;
+    color: #666;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.big-notice {
+    background: linear-gradient(135deg, #fef3c7, #fde68a);
+    border: 4px solid #f59e0b;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 95%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #92400e;
+    line-height: 1.6;
+    box-shadow: 0 6px 15px rgba(245, 158, 11, 0.3);
+}
+
+.pricing-table-simple {
+    margin: 30px auto;
+    max-width: 95%;
+    background: white;
+    border: 4px solid #F2BED1;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.pricing-table-simple table {
     width: 100%;
     border-collapse: collapse;
     font-family: 'Maharlika', sans-serif;
 }
 
-.pricing-table th, .pricing-table td {
+.pricing-table-simple th {
+    background: #F2BED1;
+    color: black;
+    padding: 25px 15px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    border: 2px solid #e5b8d1;
+}
+
+.pricing-table-simple td {
     padding: 20px 15px;
     text-align: center;
-    border: 2px solid #F2BED1;
-}
-
-.pricing-table th {
-    background-color: #F2BED1;
+    font-size: 20px;
     font-weight: bold;
-    color: black;
-    font-size: 24px;
+    border: 1px solid #e5b8d1;
+    background: white;
 }
 
-.pricing-table td {
-    background-color: white;
-    font-size: 22px;
+.pricing-table-simple tr:nth-child(even) td {
+    background: #fdf2f8;
+}
+
+.pricing-table-simple td:first-child {
+    text-align: left;
     font-weight: bold;
+    background: #f8f4ff !important;
+    color: #4c1d95;
 }
 
-.pricing-table tr:nth-child(even) td {
-    background-color: #fdf2f8;
-}
-
-.special-note {
-    background-color: #fef3c7;
-    border: 4px solid #f59e0b;
-    border-radius: 25px;
-    padding: 25px;
-    margin: 20px auto;
-    max-width: 90%;
+.back-button-top, .back-button-bottom {
     text-align: center;
+    margin: 30px auto;
+}
+
+.back-button-top button, .back-button-bottom button {
+    background: #F2BED1;
+    color: black;
+    border: none;
+    padding: 20px 40px;
+    font-size: 20px;
     font-weight: bold;
-    color: #92400e;
-    font-size: 22px;
-    line-height: 1.6;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
 }
 
-.highlight {
-    background-color: #ecfdf5 !important;
-    border-color: #10b981 !important;
+.back-button-top button:hover, .back-button-bottom button:hover {
+    background: #e5a3c7;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
 }
 
-.highlight .service-title {
-    color: #065f46;
-}
-
-/* Mobile responsiveness for new elements - LARGER SIZES */
+/* Mobile optimizations for senior-friendly design */
 @media only screen and (max-width: 767px) {
-    .pricing-table, .special-note {
-        width: 98%;
-        margin: 20px auto;
+    .section-header {
+        font-size: 24px;
+        padding: 15px;
     }
     
-    .pricing-table {
-        overflow-x: auto; /* Allow horizontal scrolling if needed */
+    .simple-service {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px 15px;
     }
     
-    .pricing-table th, .pricing-table td {
-        padding: 15px 8px;
+    .service-name {
+        margin-bottom: 10px;
+    }
+    
+    .service-price {
+        font-size: 26px;
+    }
+    
+    .big-notice {
+        font-size: 20px;
+        padding: 25px 15px;
+    }
+    
+    .pricing-table-simple {
+        overflow-x: auto;
+    }
+    
+    .pricing-table-simple th {
         font-size: 18px;
-        min-width: 70px; /* Ensure minimum width for 5 columns */
+        padding: 20px 10px;
     }
     
-    .pricing-table th {
-        font-size: 20px;
-    }
-    
-    .pricing-table td:first-child, .pricing-table th:first-child {
-        font-size: 16px; /* Slightly smaller for service type column */
-        min-width: 90px;
-    }
-    
-    .special-note {
-        font-size: 20px;
-        padding: 20px;
+    .pricing-table-simple td {
+        font-size: 17px;
+        padding: 15px 8px;
     }
 }
 
-/* Extra small screens - even more compact */
 @media only screen and (max-width: 480px) {
-    .pricing-table th, .pricing-table td {
-        padding: 12px 6px;
+    .pricing-table-simple th {
         font-size: 16px;
-        min-width: 65px;
+        padding: 15px 6px;
     }
     
-    .pricing-table th {
-        font-size: 18px;
-    }
-    
-    .pricing-table td:first-child, .pricing-table th:first-child {
-        font-size: 14px;
-        min-width: 80px;
+    .pricing-table-simple td {
+        font-size: 15px;
+        padding: 12px 5px;
     }
 }

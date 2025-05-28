@@ -9,6 +9,129 @@
         <script src="https://kit.fontawesome.com/c011338aa2.js" crossorigin="anonymous"></script>
         <style>
             @import url('https://fonts.cdnfonts.com/css/maharlika');
+            
+            /* Enhanced styles while keeping your original design */
+            .container h4 {
+                font-style: italic;
+                opacity: 0.9;
+                margin-top: 8px;
+            }
+            
+            .welcome-section {
+                background: linear-gradient(135deg, rgba(242, 190, 209, 0.1), rgba(229, 163, 199, 0.1));
+                padding: 20px;
+                margin: 20px;
+                border-radius: 15px;
+                text-align: center;
+                border: 2px solid rgba(242, 190, 209, 0.3);
+            }
+            
+            .welcome-section h3 {
+                color: #F2BED1;
+                font-size: 1.4em;
+                margin-bottom: 10px;
+            }
+            
+            .welcome-section p {
+                color: #666;
+                font-size: 1.1em;
+                line-height: 1.5;
+                max-width: 600px;
+                margin: 0 auto;
+            }
+            
+            .menu {
+                padding: 20px;
+            }
+            
+            .wifi {
+                background: #fff3cd;
+                border: 2px solid #ffd60a;
+                border-radius: 10px;
+                padding: 15px;
+                margin: 0 20px 25px 20px;
+                text-align: center;
+                color: #664d03;
+                font-weight: bold;
+            }
+            
+            .content {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 20px;
+                max-width: 1000px;
+                margin: 0 auto;
+                padding: 0 20px;
+            }
+            
+            /* Keep buttons simple and clean like original */
+            
+            /* Quick info section */
+            .quick-info {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 15px;
+                margin: 30px 20px;
+                max-width: 800px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            .info-card {
+                background: white;
+                padding: 15px;
+                border-radius: 10px;
+                text-align: center;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+                border-left: 4px solid #F2BED1;
+            }
+            
+            .info-card h4 {
+                color: #F2BED1;
+                margin-bottom: 8px;
+                font-size: 1.1em;
+            }
+            
+            .info-card p {
+                color: #666;
+                font-size: 0.9em;
+                line-height: 1.4;
+            }
+            
+            /* Responsive improvements */
+            @media (max-width: 768px) {
+                .content {
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 15px;
+                    padding: 0 15px;
+                }
+                
+                .select-menu {
+                    height: 100px;
+                    font-size: 1.1em;
+                }
+                
+                .welcome-section {
+                    margin: 15px;
+                    padding: 15px;
+                }
+                
+                .quick-info {
+                    grid-template-columns: 1fr;
+                    margin: 20px 15px;
+                }
+            }
+            
+            @media (max-width: 480px) {
+                .content {
+                    grid-template-columns: 1fr;
+                }
+                
+                .select-menu {
+                    height: 80px;
+                    font-size: 1em;
+                }
+            }
         </style>
     </head>
     <body>
@@ -53,6 +176,13 @@
                     </a>
                 </div>
                 <div>
+                    <a href="otherpages/lashes.html">
+                        <button class="sibebar-text">
+                            Lashes
+                        </button>
+                    </a>
+                </div>
+                <div>
                     <a href="otherpages/addon.html">
                         <button class="sibebar-text">
                             Add Ons
@@ -73,65 +203,85 @@
                 </a>
             </div>
 
-        <div class="container">
-            <h1>Service Menu</h1>
-            <h4>Your Beauty   Your Way</h4>
-        </div>
+            <div class="container">
+                <h1>Service Menu</h1>
+                <h4>Your Beauty • Your Way</h4>
+            </div>
        </div>
 
+       <!-- Welcome Section -->
+       <div class="welcome-section">
+            <h3>👑 Welcome to Princess Nails</h3>
+            <p>From classic manicures to trendy nail art, we offer premium services that cater to every style and occasion. Experience luxury and quality in every visit.</p>
+       </div>
 
        <!--Under the Photo Header-->
        <div class="menu">
-        <h4 class="wifi">If there is anything wrong with the website, please use the contact button to keep us informed.</h4>
-        <div class="content">
-            <div class="square">
-                <a href="otherpages/manicure.html">
-                    <button class="select-menu">Manicures</button>
-                </a>
+            <h4 class="wifi">💬 Prices subject to change based on service complexity, time required, or additional product usage. Please confirm final pricing with your technician.</h4>
+            
+            <div class="content">
+                <div class="square">
+                    <a href="otherpages/manicure.html">
+                        <button class="select-menu">Manicures</button>
+                    </a>
+                </div>
+                <div class="square">
+                    <a href="otherpages/pedicure.html">
+                        <button class="select-menu">Pedicures</button>
+                    </a>
+                </div>
+                <div class="square">
+                    <a href="otherpages/fill.html">
+                        <button class="select-menu">Fills</button>
+                    </a>
+                </div>
+                <div class="square">
+                    <a href="otherpages/waxing.html">
+                        <button class="select-menu">Waxing</button>
+                    </a>
+                </div>
+                <div class="square">
+                    <a href="otherpages/lashes.html">
+                        <button class="select-menu">Lashes</button>
+                    </a>
+                </div>
+                <div class="square">
+                    <a href="otherpages/addon.html">
+                        <button class="select-menu">Add Ons</button>
+                    </a>
+                </div>
+                <div class="square">
+                    <a href="otherpages/contact.html">
+                        <button class="select-menu">Contact Us</button>
+                    </a>
+                </div>
             </div>
-            <div class="square">
-                <a href="otherpages/pedicure.html">
-                    <button class="select-menu">Pedicures</button>
-                </a>
-            </div>
-            <div class="square">
-                <a href="otherpages/fill.html">
-                    <button class="select-menu">Fills</button>
-                </a>
-            </div>
-            <div class="square">
-                <a href="otherpages/waxing.html">
-                    <button class="select-menu">Waxing</button>
-                </a>
-            </div>
-            <div class="square">
-                <a href="otherpages/lashes.html">
-                    <button class="select-menu">Lashes</button>
-                </a>
-            </div>
-            <div class="square">
-                <a href="otherpages/addon.html">
-                    <button class="select-menu">Add Ons</button>
-                </a>
-            </div>
-            <div class="square">
-                <a href="otherpages/contact.html">
-                    <button class="select-menu">Contact Us</button>
-                </a>
-            </div>
-        </div>
        </div>
 
+       <!-- Quick Info Section -->
+       <div class="quick-info">
+            <div class="info-card">
+                <h4>⏰ Hours</h4>
+                <p>Mon-Fri: 9am-7pm<br>Saturday: 9am-6pm<br>Sunday: 10am-5pm</p>
+            </div>
+            <div class="info-card">
+                <h4>📞 Call Us</h4>
+                <p>(623) 551-2323<br>Walk-ins Welcome!</p>
+            </div>
+            <div class="info-card">
+                <h4>💳 Payment</h4>
+                <p>Cash & Card<br>Zelle: (623)500-7659</p>
+            </div>
+       </div>
 
-
-<!--------------Footer------------->
-<div class = "footer">
-    <p>Follow Us On Social Media or Leave a Review</p>
-    <a href = "https://www.facebook.com/AnthemPrincessNails"><i class="fa-brands fa-facebook"></i></a>
-    <a href = "https://www.google.com.tr/search?q=The+Princess+Nails+85086&sca_esv=595760448&ei=jxmXZeHqOcjOkPIP7fuHgAw&ved=0ahUKEwih7rLOzcSDAxVIJ0QIHe39AcAQ4dUDCBA&uact=5&oq=The+Princess+Nails+85086&gs_lp=Egxnd3Mtd2l6LXNlcnAiGFRoZSBQcmluY2VzcyBOYWlscyA4NTA4NjIIEAAYgAQYogQyCBAAGIAEGKIESPoQULYDWPoLcAJ4AZABAJgBqAGgAYsCqgEDMS4xuAEDyAEA-AEBwgIKEAAYRxjWBBiwA-IDBBgAIEHiAwUSATEgQIgGAZAGCA&sclient=gws-wiz-serp"><i class="fa-brands fa-google-plus"></i></a>
-    <a href = "https://www.instagram.com/princessnailsanthem/"><i class="fa-brands fa-instagram"></i></a>
-    <a href = "https://www.yelp.com/biz/the-princess-nails-anthem"><i class="fa-brands fa-yelp"></i></a>
-    <p>Copyright © 2024, Princess Nails Menu</p>
-</div>
+        <!--------------Footer------------->
+        <div class="footer">
+            <p>Follow Us On Social Media or Leave a Review</p>
+            <a href="https://www.facebook.com/AnthemPrincessNails"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.google.com.tr/search?q=The+Princess+Nails+85086&sca_esv=595760448&ei=jxmXZeHqOcjOkPIP7fuHgAw&ved=0ahUKEwih7rLOzcSDAxVIJ0QIHe39AcAQ4dUDCBA&uact=5&oq=The+Princess+Nails+85086&gs_lp=Egxnd3Mtd2l6LXNlcnAiGFRoZSBQcmluY2VzcyBOYWlscyA4NTA4NjIIEAAYgAQYogQyCBAAGIAEGKIESPoQUL4DWPoLcAJ4AZABAJgBqAGgAYsCqgEDMS4xuAEDyAEA-AEBwgIKEAAYRxjWBBiwA-IDBBgAIEHiAwUSATEgQIgGAZAGCA&sclient=gws-wiz-serp"><i class="fa-brands fa-google-plus"></i></a>
+            <a href="https://www.instagram.com/princessnailsanthem/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.yelp.com/biz/the-princess-nails-anthem"><i class="fa-brands fa-yelp"></i></a>
+            <p>Copyright © 2024, Princess Nails Menu</p>
+        </div>
     </body>
 </html>

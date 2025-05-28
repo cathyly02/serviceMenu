@@ -72,69 +72,89 @@
                     <button>Princess Nails</button>
                 </a>
             </div>
-
-        <div class="container">
-            <h1>Lashes</h1>
-        </div>
+            <div class="container">
+                <h1>Lashes</h1>
+            </div>
        </div>
 
-       <!--Under the Photo Header-->
-       <div class="services">
-        <div class="square">
+       <div class="back-button-top">
             <a href="../index.html">
-                <button id="Back">Back to Home</button>
+                <button>← Back to Home</button>
             </a>
         </div>
-        <div class="outline-square">
-            <h2 class="service-title">Full set<br>$70</h2>
-            <div class="dropdown-description">
-                <p>For a brand new set of lashes</p>
+
+        <!-- Lash Services -->
+        <div class="menu-section">
+            <div class="section-header">Professional Eyelash Extensions</div>
+
+            <div class="simple-service">
+                <div class="service-name">
+                    Full Set Eyelash Extensions
+                    <div class="service-description">Complete new set of individual eyelash extensions for dramatic, beautiful eyes</div>
+                </div>
+                <div class="service-price">$70+</div>
+            </div>
+
+            <div class="simple-service">
+                <div class="service-name">
+                    1-Week Fill
+                    <div class="service-description">Touch-up service within 1 week to fill in any gaps and maintain your look</div>
+                </div>
+                <div class="service-price">$40+</div>
+            </div>
+
+            <div class="simple-service">
+                <div class="service-name">
+                    2-Week Fill
+                    <div class="service-description">Maintenance service after 2 weeks to refresh and fill in your lash extensions</div>
+                </div>
+                <div class="service-price">$50+</div>
             </div>
         </div>
-        
-        <div class="outline-square">
-            <h2 class="service-title">Fill 1 week<br>$40</h2>
-            <div class="dropdown-description">
-                <p>After two weeks, get the empty gaps filled.</p>
+
+        <!-- Lash Extension Information -->
+        <div class="menu-section">
+            <div class="section-header">Lash Extension Care & Information</div>
+            
+            <div class="simple-service">
+                <div class="service-name">
+                    How Long Do They Last?
+                    <div class="service-description">With proper care, extensions can last 3-4 weeks. Fills recommended every 2-3 weeks</div>
+                </div>
+                <div class="service-price">3-4 Weeks</div>
+            </div>
+
+            <div class="simple-service">
+                <div class="service-name">
+                    Application Time
+                    <div class="service-description">Full set takes approximately 1.5-2 hours. Fills take 45-60 minutes</div>
+                </div>
+                <div class="service-price">1.5-2 Hours</div>
+            </div>
+
+            <div class="simple-service">
+                <div class="service-name">
+                    Aftercare Instructions
+                    <div class="service-description">Avoid water for 24 hours, no oil-based products, gentle cleansing only</div>
+                </div>
             </div>
         </div>
-        <div class="outline-square">
-            <h2 class="service-title">Fill 2 week<br>$50</h2>
-            <div class="dropdown-description">
-                <p>After two weeks, get the empty gaps filled.</p>
-            </div>
-        </div>
-        <div class="square">
+
+
+        <div class="back-button-bottom">
             <a href="../index.html">
-                <button id="Back">Back to Home</button>
+                <button>← Back to Home</button>
             </a>
         </div>
-           
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                const services = document.querySelectorAll('.outline-square');
 
-                services.forEach(service => {
-                    service.addEventListener('click', function () {
-                        // Toggle visibility of the dropdown description
-                        const target = this.getAttribute('data-target');
-                        const dropdown = document.querySelector(`.outline-square[data-target="${target}"] .dropdown-description`);
-                        dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
-                    });
-                });
-            });
-        </script>
-
-
-
-<!--------------Footer------------->
-<div class = "footer">
-    <p>Follow Us On Social Media or Leave a Review</p>
-    <a href = "https://www.facebook.com/AnthemPrincessNails"><i class="fa-brands fa-facebook"></i></a>
-    <a href = "https://www.google.com.tr/search?q=The+Princess+Nails+85086&sca_esv=595760448&ei=jxmXZeHqOcjOkPIP7fuHgAw&ved=0ahUKEwih7rLOzcSDAxVIJ0QIHe39AcAQ4dUDCBA&uact=5&oq=The+Princess+Nails+85086&gs_lp=Egxnd3Mtd2l6LXNlcnAiGFRoZSBQcmluY2VzcyBOYWlscyA4NTA4NjIIEAAYgAQYogQyCBAAGIAEGKIESPoQULYDWPoLcAJ4AZABAJgBqAGgAYsCqgEDMS4xuAEDyAEA-AEBwgIKEAAYRxjWBBiwA-IDBBgAIEHiAwUSATEgQIgGAZAGCA&sclient=gws-wiz-serp"><i class="fa-brands fa-google-plus"></i></a>
-    <a href = "https://www.instagram.com/princessnailsanthem/"><i class="fa-brands fa-instagram"></i></a>
-    <a href = "https://www.yelp.com/biz/the-princess-nails-anthem"><i class="fa-brands fa-yelp"></i></a>
-    <p>Copyright © 2024, Princess Nails Menu</p>
-</div>
+        <!--------------Footer------------->
+        <div class="footer">
+            <p>Follow Us On Social Media or Leave a Review</p>
+            <a href="https://www.facebook.com/AnthemPrincessNails"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.google.com.tr/search?q=The+Princess+Nails+85086&sca_esv=595760448&ei=jxmXZeHqOcjOkPIP7fuHgAw&ved=0ahUKEwih7rLOzcSDAxVIJ0QIHe39AcAQ4dUDCBA&uact=5&oq=The+Princess+Nails+85086&gs_lp=Egxnd3Mtd2l6LXNlcnAiGFRoZSBQcmluY2VzcyBOYWlscyA4NTA4NjIIEAAYgAQYogQyCBAAGIAEGKIESPoQULYDWPoLcAJ4AZABAJgBqAGgAYsCqgEDMS4xuAEDyAEA-AEBwgIKEAAYRxjWBBiwA-IDBBgAIEHiAwUSATEgQIgGAZAGCA&sclient=gws-wiz-serp"><i class="fa-brands fa-google-plus"></i></a>
+            <a href="https://www.instagram.com/princessnailsanthem/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.yelp.com/biz/the-princess-nails-anthem"><i class="fa-brands fa-yelp"></i></a>
+            <p>Copyright © 2024, Princess Nails Menu</p>
+        </div>
     </body>
 </html>

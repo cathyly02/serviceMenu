@@ -72,102 +72,104 @@
                     <button>Princess Nails</button>
                 </a>
             </div>
-
-        <div class="container">
-            <h1>Add Ons</h1>
-        </div>
+            <div class="container">
+                <h1>Add Ons</h1>
+            </div>
        </div>
 
-       <!--Under the Photo Header-->
-       <div class="services">
-        <div class="square">
-            <div class="wifi">
-            <p>All these services are add-ons. If you have questions, please ask your nail tech.</p>
-            </div>
+       <div class="back-button-top">
             <a href="../index.html">
-                <button id="Back">Back to Home</button>
+                <button>← Back to Home</button>
             </a>
         </div>
-        <div class="outline-square">
-            <h2 class="service-title">Tips<br>$10</h2>
-            <div class="dropdown-description">
-                <p>This will be an extra charge if you choose to add this to your service.</p>
+
+        <!-- Add-Ons Services -->
+        <div class="menu-section">
+            <div class="section-header">Popular Add-On Services</div>
+            <div class="big-notice">
+                ✨ ALL ADD-ONS CAN BE COMBINED<br>
+                💬 Prices subject to change based on service complexity, time required, or additional product usage. Please confirm final pricing with your technician.
+            </div>
+
+            <div class="simple-service">
+                <div class="service-name">
+                    Tips
+                    <div class="service-description">Professional nail extensions for added length</div>
+                </div>
+                <div class="service-price">$10+</div>
+            </div>
+
+            <div class="simple-service">
+                <div class="service-name">
+                    French Toes
+                    <div class="service-description">Classic French manicure style for your toes</div>
+                </div>
+                <div class="service-price">$7+</div>
+            </div>
+
+            <div class="simple-service">
+                <div class="service-name">
+                    Nail Designs (2)
+                    <div class="service-description">Custom nail art designs on 2 nails</div>
+                </div>
+                <div class="service-price">$7+</div>
+            </div>
+
+            <div class="simple-service">
+                <div class="service-name">
+                    Callus Remover
+                    <div class="service-description">Professional callus removal treatment</div>
+                </div>
+                <div class="service-price">$10+</div>
+            </div>
+
+            <div class="simple-service">
+                <div class="service-name">
+                    Sea Salt Scrubs
+                    <div class="service-description">Exfoliating sea salt treatment for smooth skin</div>
+                </div>
+                <div class="service-price">$7+</div>
+            </div>
+
+            <div class="simple-service">
+                <div class="service-name">
+                    Paraffin Wax Treatment
+                    <div class="service-description">Moisturizing paraffin wax for hands or feet</div>
+                </div>
+                <div class="service-price">$10+</div>
+            </div>
+
+            <div class="simple-service">
+                <div class="service-name">
+                    Acrylic Toes (2)
+                    <div class="service-description">Acrylic enhancement on 2 toenails</div>
+                </div>
+                <div class="service-price">$20+</div>
+            </div>
+
+            <div class="simple-service">
+                <div class="service-name">
+                    Gel Toe Polish
+                    <div class="service-description">Long-lasting gel polish for toenails</div>
+                </div>
+                <div class="service-price">$25+</div>
             </div>
         </div>
-        
-        <div class="outline-square">
-            <h2 class="service-title">French Toes<br>$7</h2>
-            <div class="dropdown-description">
-                <p>This will be an extra charge if you choose to add this to your service.</p>
-            </div>
-        </div>
-        <div class="outline-square">
-            <h2 class="service-title">Designs(2)<br>$7</h2>
-            <div class="dropdown-description">
-                <p>This will be an extra charge if you choose to add this to your service.</p>
-            </div>
-        </div>
-        <div class="outline-square">
-            <h2 class="service-title">Calluses Remover<br>$10</h2>
-            <div class="dropdown-description">
-                <p>This will be an extra charge if you choose to add this to your service.</p>
-            </div>
-        </div>
-        <div class="outline-square">
-            <h2 class="service-title">Sea Salt Scrubs<br>$7</h2>
-            <div class="dropdown-description">
-                <p>This will be an extra charge if you choose to add this to your service.</p>
-            </div>
-        </div>
-        <div class="outline-square">
-            <h2 class="service-title">Paraffin Wax<br>$10</h2>
-            <div class="dropdown-description">
-                <p>This will be an extra charge if you choose to add this to your service.</p>
-            </div>
-        </div>
-        <div class="outline-square">
-            <h2 class="service-title">Acrylic Toes(2)<br>$20+</h2>
-            <div class="dropdown-description">
-                <p>This will be an extra charge if you choose to add this to your service.</p>
-            </div>
-        </div>
-        <div class="outline-square">
-            <h2 class="service-title">Gel Toe Polish<br>$25+</h2>
-            <div class="dropdown-description">
-                <p>This will be an extra charge if you choose to add this to your service.</p>
-            </div>
-        </div>
-        <div class="square">
+
+        <div class="back-button-bottom">
             <a href="../index.html">
-                <button id="Back">Back to Home</button>
+                <button>← Back to Home</button>
             </a>
         </div>
-           
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                const services = document.querySelectorAll('.outline-square');
 
-                services.forEach(service => {
-                    service.addEventListener('click', function () {
-                        // Toggle visibility of the dropdown description
-                        const target = this.getAttribute('data-target');
-                        const dropdown = document.querySelector(`.outline-square[data-target="${target}"] .dropdown-description`);
-                        dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
-                    });
-                });
-            });
-        </script>
-
-
-
-<!--------------Footer------------->
-<div class = "footer">
-    <p>Follow Us On Social Media or Leave a Review</p>
-    <a href = "https://www.facebook.com/AnthemPrincessNails"><i class="fa-brands fa-facebook"></i></a>
-    <a href = "https://www.google.com.tr/search?q=The+Princess+Nails+85086&sca_esv=595760448&ei=jxmXZeHqOcjOkPIP7fuHgAw&ved=0ahUKEwih7rLOzcSDAxVIJ0QIHe39AcAQ4dUDCBA&uact=5&oq=The+Princess+Nails+85086&gs_lp=Egxnd3Mtd2l6LXNlcnAiGFRoZSBQcmluY2VzcyBOYWlscyA4NTA4NjIIEAAYgAQYogQyCBAAGIAEGKIESPoQULYDWPoLcAJ4AZABAJgBqAGgAYsCqgEDMS4xuAEDyAEA-AEBwgIKEAAYRxjWBBiwA-IDBBgAIEHiAwUSATEgQIgGAZAGCA&sclient=gws-wiz-serp"><i class="fa-brands fa-google-plus"></i></a>
-    <a href = "https://www.instagram.com/princessnailsanthem/"><i class="fa-brands fa-instagram"></i></a>
-    <a href = "https://www.yelp.com/biz/the-princess-nails-anthem"><i class="fa-brands fa-yelp"></i></a>
-    <p>Copyright © 2024, Princess Nails Menu</p>
-</div>
+        <!--------------Footer------------->
+        <div class="footer">
+            <p>Follow Us On Social Media or Leave a Review</p>
+            <a href="https://www.facebook.com/AnthemPrincessNails"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.google.com.tr/search?q=The+Princess+Nails+85086&sca_esv=595760448&ei=jxmXZeHqOcjOkPIP7fuHgAw&ved=0ahUKEwih7rLOzcSDAxVIJ0QIHe39AcAQ4dUDCBA&uact=5&oq=The+Princess+Nails+85086&gs_lp=Egxnd3Mtd2l6LXNlcnAiGFRoZSBQcmluY2VzcyBOYWlscyA4NTA4NjIIEAAYgAQYogQyCBAAGIAEGKIESPoQULYDWPoLcAJ4AZABAJgBqAGgAYsCqgEDMS4xuAEDyAEA-AEBwgIKEAAYRxjWBBiwA-IDBBgAIEHiAwUSATEgQIgGAZAGCA&sclient=gws-wiz-serp"><i class="fa-brands fa-google-plus"></i></a>
+            <a href="https://www.instagram.com/princessnailsanthem/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.yelp.com/biz/the-princess-nails-anthem"><i class="fa-brands fa-yelp"></i></a>
+            <p>Copyright © 2024, Princess Nails Menu</p>
+        </div>
     </body>
 </html>

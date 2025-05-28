@@ -270,14 +270,15 @@ margin: 20px;
   margin: 10px;
 }
 
-/* PRICING TABLE STYLES */
+/* PRICING TABLE STYLES - MUCH LARGER TEXT */
 .pricing-table {
     margin: 20px auto;
-    max-width: 90%;
+    max-width: 95%;
     background: white;
     border: 5px solid #F2BED1;
     border-radius: 25px;
     overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .pricing-table table {
@@ -287,7 +288,7 @@ margin: 20px;
 }
 
 .pricing-table th, .pricing-table td {
-    padding: 20px 15px;
+    padding: 25px 15px;
     text-align: center;
     border: 2px solid #F2BED1;
 }
@@ -296,12 +297,12 @@ margin: 20px;
     background-color: #F2BED1;
     font-weight: bold;
     color: black;
-    font-size: 24px;
+    font-size: 28px;
 }
 
 .pricing-table td {
     background-color: white;
-    font-size: 22px;
+    font-size: 26px;
     font-weight: bold;
 }
 
@@ -309,7 +310,30 @@ margin: 20px;
     background-color: #fdf2f8;
 }
 
-/* SPECIAL NOTICE STYLES */
+.pricing-table td:first-child {
+    text-align: left;
+    font-weight: bold;
+    background: #f8f4ff !important;
+    color: #4c1d95;
+    font-size: 24px;
+}
+
+/* BIG NOTICE STYLES - MUCH LARGER TEXT */
+.big-notice {
+    background: linear-gradient(135deg, #fef3c7, #fde68a);
+    border: 4px solid #f59e0b;
+    border-radius: 20px;
+    padding: 35px;
+    margin: 30px auto;
+    max-width: 95%;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #92400e;
+    line-height: 1.8;
+    box-shadow: 0 6px 15px rgba(245, 158, 11, 0.3);
+}
+
 .special-note {
     background-color: #fef3c7;
     border: 4px solid #f59e0b;
@@ -422,7 +446,7 @@ margin: 20px;
         grid-template-columns: 1fr;
     }
     
-    .pricing-table, .special-note {
+    .pricing-table, .special-note, .big-notice {
         width: 98%;
         margin: 20px auto;
     }
@@ -432,23 +456,28 @@ margin: 20px;
     }
     
     .pricing-table th, .pricing-table td {
-        padding: 15px 8px;
-        font-size: 18px;
-        min-width: 70px;
+        padding: 20px 10px;
+        font-size: 22px;
+        min-width: 80px;
     }
     
     .pricing-table th {
-        font-size: 20px;
+        font-size: 24px;
     }
     
     .pricing-table td:first-child, .pricing-table th:first-child {
-        font-size: 16px;
-        min-width: 90px;
+        font-size: 20px;
+        min-width: 100px;
     }
     
     .special-note {
-        font-size: 20px;
-        padding: 20px;
+        font-size: 24px;
+        padding: 25px 15px;
+    }
+    
+    .big-notice {
+        font-size: 24px;
+        padding: 30px 20px;
     }
     
     .section-header {
@@ -473,17 +502,22 @@ margin: 20px;
 
 @media only screen and (max-width: 480px) {
     .pricing-table th, .pricing-table td {
-        padding: 12px 6px;
-        font-size: 16px;
-        min-width: 65px;
+        padding: 15px 8px;
+        font-size: 20px;
+        min-width: 75px;
     }
     
     .pricing-table th {
-        font-size: 18px;
+        font-size: 22px;
     }
     
     .pricing-table td:first-child, .pricing-table th:first-child {
-        font-size: 14px;
-        min-width: 80px;
+        font-size: 18px;
+        min-width: 90px;
+    }
+    
+    .big-notice {
+        font-size: 22px;
+        padding: 25px 15px;
     }
 }

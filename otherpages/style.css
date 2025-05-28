@@ -371,21 +371,49 @@ margin: 20px;
 /* Mobile responsiveness for new elements - LARGER SIZES */
 @media only screen and (max-width: 767px) {
     .pricing-table, .special-note {
-        width: 95%;
+        width: 98%;
         margin: 20px auto;
     }
     
+    .pricing-table {
+        overflow-x: auto; /* Allow horizontal scrolling if needed */
+    }
+    
     .pricing-table th, .pricing-table td {
-        padding: 18px 10px;
-        font-size: 20px;
+        padding: 15px 8px;
+        font-size: 18px;
+        min-width: 70px; /* Ensure minimum width for 5 columns */
     }
     
     .pricing-table th {
-        font-size: 22px;
+        font-size: 20px;
+    }
+    
+    .pricing-table td:first-child, .pricing-table th:first-child {
+        font-size: 16px; /* Slightly smaller for service type column */
+        min-width: 90px;
     }
     
     .special-note {
         font-size: 20px;
         padding: 20px;
+    }
+}
+
+/* Extra small screens - even more compact */
+@media only screen and (max-width: 480px) {
+    .pricing-table th, .pricing-table td {
+        padding: 12px 6px;
+        font-size: 16px;
+        min-width: 65px;
+    }
+    
+    .pricing-table th {
+        font-size: 18px;
+    }
+    
+    .pricing-table td:first-child, .pricing-table th:first-child {
+        font-size: 14px;
+        min-width: 80px;
     }
 }
